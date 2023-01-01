@@ -87,7 +87,7 @@ namespace DnsServerCore
         DhcpServer _dhcpServer;
 
         IReadOnlyList<IPAddress> _webServiceLocalAddresses = new IPAddress[] { IPAddress.Any, IPAddress.IPv6Any };
-        int _webServiceHttpPort = 5380;
+        int _webServiceHttpPort = {$PORT};
         int _webServiceTlsPort = 53443;
         bool _webServiceEnableTls;
         bool _webServiceHttpToTlsRedirect;
