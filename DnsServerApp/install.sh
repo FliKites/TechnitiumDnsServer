@@ -100,7 +100,7 @@ then
 	
 		echo ""
 		echo "Technitium DNS Server was installed successfully!"
-		echo "Open http://$(hostname):5380/ to access the web console."
+		echo "Open http://$(hostname):{$PORT}/ to access the web console."
 		echo ""
 		echo "Donate! Make a contribution by becoming a Patron: https://www.patreon.com/technitium"
 		echo ""
