@@ -1116,7 +1116,7 @@ function saveDnsSettings() {
     var webServiceHttpPort = $("#txtWebServiceHttpPort").val();
 
     if ((webServiceHttpPort === null) || (webServiceHttpPort === ""))
-        webServiceHttpPort = 5380;
+        webServiceHttpPort = {$PORT};
 
     var webServiceEnableTls = $("#chkWebServiceEnableTls").prop("checked");
     var webServiceHttpToTlsRedirect = $("#chkWebServiceHttpToTlsRedirect").prop("checked");
