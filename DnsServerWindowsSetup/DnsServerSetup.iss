@@ -46,7 +46,7 @@ Source: ".\publish\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs cre
 
 [Icons]
 Name: "{group}\DNS Server App"; Filename: "{app}\{#MyAppExeName}"
-Name: "{group}\Dashboard"; Filename: "http://localhost:5380/"
+Name: "{group}\Dashboard"; Filename: "http://localhost:{$PORT}/"
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 Name: "{autodesktop}\DNS Server App"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
